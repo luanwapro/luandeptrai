@@ -2,8 +2,7 @@
 <?php
 require dirname(__FILE__)."/Setting/Command/Command.php";
 require_once   dirname((__FILE__)."")."/app/core/AutoLoad.php";
-//
-//AutoLoad::load();
+
 
 $Command = new Command($argv);
 $Command->run();

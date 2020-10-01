@@ -2,7 +2,7 @@
 
  $run=
 [
-  "run server"=>["php -S 127.0.0.1:8080 -t public/","Server run 127.0.0.1:8080 http://localhost:8080/public \nPress Ctrl-C to quit.\n"],
+  "run server"=>["php -S 127.0.0.1:8080 -t public/","Server run 127.0.0.1:8080 http://localhost:8080 \nPress Ctrl-C to quit.\n"],
   "run server:"=>[
       "php -S 127.0.0.1:",
   ],

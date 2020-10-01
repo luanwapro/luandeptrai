@@ -12,7 +12,7 @@ use app\core\controller;
 
            function luan(){
 
-                echo "haha";
+//                return render("",[]);
            }
 
 

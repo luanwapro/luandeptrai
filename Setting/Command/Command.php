@@ -76,8 +76,13 @@ function getKeyArray($str,$array){
 
                 if (is_int((int)explode($str, ":")[0])) {
                     self::gioithieu();
-                    echo "Server run 127.0.0.1:80 http://localhost:".trim(explode(':',$str)[1])." \nPress Ctrl-C to quit\n";
-                      $output = shell_exec($value[0] . trim(explode(":", $str)[1])."-t public/");
+                    if(trim(explode(':',$str)[1])=="80") {
+                        echo "Server run 127.0.0.1:" . trim(explode(':', $str)[1]) . " http://localhost:" . trim(explode(':', $str)[1]) . " \nPress Ctrl-C to quit\n";
+                        $output = shell_exec($value[0] . trim(explode(":", $str)[1]) . "");
+                    }else{
+                        echo "Server run 127.0.0.1:" . trim(explode(':', $str)[1]) . " http://localhost:" . trim(explode(':', $str)[1]) . " \nPress Ctrl-C to quit\n";
+                        $output = shell_exec($value[0] . trim(explode(":", $str)[1]) . " -t public/");
+                    }
 
                 }
 

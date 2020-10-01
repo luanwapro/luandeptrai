@@ -8,7 +8,7 @@ class controller{
 
     function render($view,$data=null){
 
-
+        return new static();
 
     }
     function view($view,$data=null){

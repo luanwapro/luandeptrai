@@ -298,12 +298,12 @@ class Router
         
             for($i=0;$i<Router::$countGroupGet;$i++){
                
-       (Router::$urlListGet[count(Router::$urlListGet)-($i+1)])[0]="/".$namefunc.(string)(Router::$urlListGet[count(Router::$urlListGet)-($i+1)])[0];
+       Router::$urlListGet[count(Router::$urlListGet)-($i+1)][0]="/".$namefunc.(string)(Router::$urlListGet[count(Router::$urlListGet)-($i+1)])[0];
             }
 
             for($i=0;$i<Router::$countGroupPost;$i++){
                
-                (Router::$urlListPost[count(Router::$urlListPost)-($i+1)])[0]="/".$namefunc.(string)(Router::$urlListPost[count(Router::$urlListPost)-($i+1)])[0];
+                Router::$urlListPost[count(Router::$urlListPost)-($i+1)][0]="/".$namefunc.(string)(Router::$urlListPost[count(Router::$urlListPost)-($i+1)])[0];
                      }
         }
         

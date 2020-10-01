@@ -18,6 +18,8 @@
             "App\\": "app/"
         }
     },
-    "require": {},
+    "require": {
+    "madskullcreations/simplicity":"dev-master@dev"
+    } 
     "minimum-stability": "dev"
 }

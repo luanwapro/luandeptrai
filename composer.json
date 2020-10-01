@@ -5,7 +5,7 @@
         "framework",
         "luandeptrai"
     ],
-    "type": "library",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {

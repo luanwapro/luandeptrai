@@ -1,0 +1,22 @@
+{
+    "name": "luandeptrai/luandeptrai",
+    "description": "luan dep trai",
+    "keywords": [
+        "framework",
+        "luandeptrai"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "luan",
+            "email": "phamminhluan24121998@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+    "require": {}
+}
